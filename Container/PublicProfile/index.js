@@ -52,22 +52,22 @@ const PublicProfile = ({ props }) => {
           <Head>
           
             {/* <!-- Primary Meta Tags --> */}
-            <title>ITIL® 4 Foundation: The Guiding Principles • Ajit • DocView® Digital Badge: ITIL® 4 Foundation: The Guiding Principles</title>
-            <meta name="title" content="ITIL® 4 Foundation: The Guiding Principles • Ajit • DocView® Digital Badge: ITIL® 4 Foundation: The Guiding Principles" />
-            <meta name="description" content={props?.data[0]?.badgeData?.description} />
+            <title>Congratulations! Here is your certified badge for {props?.data[0]?.badgeData.criteria}.</title>
+            <meta name="title" content={`Congratulations! Here is your certified badge for ${props?.data[0]?.badgeData.criteria}.`} />
+            <meta name="description" content={`Hi ${props?.data[0]?.recipientData.name}, We congrats you on receiving the badge for ${props?.data[0]?.badgeData.skill} issued by ${props?.data[0]?.issuerData?.name} and  valid till ${moment(props?.data[0]?.validTo).format('DD/MM/YYYY')}.`} />
 
             {/* <!-- Open Graph / Facebook --> */}
             <meta property="og:type" content="website" />
             <meta property="og:url" content={`${process.env.live}/?id=${props?.id}`} />
-            <meta property="og:title" content="ITIL® 4 Foundation: The Guiding Principles • Ajit • DocView® Digital Badge: ITIL® 4 Foundation: The Guiding Principles" />
-            <meta property="og:description" content={props?.data[0]?.badgeData?.description} />
+            <meta property="og:title" content={`Congratulations! Here is your certified badge for ${props?.data[0]?.badgeData.criteria}.`} />
+            <meta property="og:description" content={`Hi ${props?.data[0]?.recipientData.name}, We congrats you on receiving the badge for ${props?.data[0]?.badgeData.skill} issued by ${props?.data[0]?.issuerData?.name} and  valid till ${moment(props?.data[0]?.validTo).format('DD/MM/YYYY')}.`} />
             <meta property="og:image" content={`${props?.data[0]?.badgeGraphicData?.logo}`} />
 
             {/* <!-- Twitter --> */}
             <meta property="twitter:card" content="summary_large_image" />
             <meta property="twitter:url" content={`${process.env.live}/?id=${props?.id}`} />
-            <meta property="twitter:title" content="ITIL® 4 Foundation: The Guiding Principles • Ajit • DocView® Digital Badge: ITIL® 4 Foundation: The Guiding Principles" />
-            <meta property="twitter:description" content={props?.data[0]?.badgeData?.description} />
+            <meta property="twitter:title" content={`Congratulations! Here is your certified badge for ${props?.data[0]?.badgeData.criteria}.`} />
+            <meta property="twitter:description" content={`Hi ${props?.data[0]?.recipientData.name}, We congrats you on receiving the badge for ${props?.data[0]?.badgeData.skill} issued by ${props?.data[0]?.issuerData?.name} and  valid till ${moment(props?.data[0]?.validTo).format('DD/MM/YYYY')}.`} />
             <meta property="twitter:image" content={`${props?.data[0]?.badgeGraphicData?.logo}`} />
 
           </Head>

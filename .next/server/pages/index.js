@@ -39,7 +39,7 @@ function arrayNotNull(array) {
     return false;
 }
 const PublicProfile = ({ props  })=>{
-    var ref, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10, ref11, ref12, ref13, ref14, ref15, ref16, ref17, ref18, ref19, ref20;
+    var ref, ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10, ref11, ref12, ref13, ref14, ref15, ref16, ref17, ref18, ref19, ref20, ref21, ref22, ref23, ref24, ref25, ref26, ref27, ref28, ref29, ref30, ref31, ref32, ref33;
     // const input = {
     //   issuedTo: "",
     //   badgeCriteria: "",
@@ -79,16 +79,20 @@ const PublicProfile = ({ props  })=>{
                 children: [
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
                         children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx("title", {
-                                children: "ITIL\xae 4 Foundation: The Guiding Principles • Ajit • DocView\xae Digital Badge: ITIL\xae 4 Foundation: The Guiding Principles"
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("title", {
+                                children: [
+                                    "Congratulations! Here is your certified badge for ",
+                                    (ref = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref === void 0 ? void 0 : ref.badgeData.criteria,
+                                    "."
+                                ]
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 name: "title",
-                                content: "ITIL\xae 4 Foundation: The Guiding Principles • Ajit • DocView\xae Digital Badge: ITIL\xae 4 Foundation: The Guiding Principles"
+                                content: `Congratulations! Here is your certified badge for ${(ref1 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref1 === void 0 ? void 0 : ref1.badgeData.criteria}.`
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 name: "description",
-                                content: (ref = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref === void 0 ? void 0 : (ref1 = ref.badgeData) === null || ref1 === void 0 ? void 0 : ref1.description
+                                content: `Hi ${(ref2 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref2 === void 0 ? void 0 : ref2.recipientData.name}, We congrats you on receiving the badge for ${(ref3 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref3 === void 0 ? void 0 : ref3.badgeData.skill} issued by ${(ref4 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref4 === void 0 ? void 0 : (ref5 = ref4.issuerData) === null || ref5 === void 0 ? void 0 : ref5.name} and  valid till ${external_moment_default()((ref6 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref6 === void 0 ? void 0 : ref6.validTo).format('DD/MM/YYYY')}.`
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "og:type",
@@ -96,19 +100,19 @@ const PublicProfile = ({ props  })=>{
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "og:url",
-                                content: `${"https://testpage-tau.vercel.app"}/?id=${props === null || props === void 0 ? void 0 : props.id}`
+                                content: `${"http://66.175.217.67:3000"}/?id=${props === null || props === void 0 ? void 0 : props.id}`
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "og:title",
-                                content: "ITIL\xae 4 Foundation: The Guiding Principles • Ajit • DocView\xae Digital Badge: ITIL\xae 4 Foundation: The Guiding Principles"
+                                content: `Congratulations! Here is your certified badge for ${(ref7 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref7 === void 0 ? void 0 : ref7.badgeData.criteria}.`
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "og:description",
-                                content: (ref2 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref2 === void 0 ? void 0 : (ref3 = ref2.badgeData) === null || ref3 === void 0 ? void 0 : ref3.description
+                                content: `Hi ${(ref8 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref8 === void 0 ? void 0 : ref8.recipientData.name}, We congrats you on receiving the badge for ${(ref9 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref9 === void 0 ? void 0 : ref9.badgeData.skill} issued by ${(ref10 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref10 === void 0 ? void 0 : (ref11 = ref10.issuerData) === null || ref11 === void 0 ? void 0 : ref11.name} and  valid till ${external_moment_default()((ref12 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref12 === void 0 ? void 0 : ref12.validTo).format('DD/MM/YYYY')}.`
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "og:image",
-                                content: `${(ref4 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref4 === void 0 ? void 0 : (ref5 = ref4.badgeGraphicData) === null || ref5 === void 0 ? void 0 : ref5.logo}`
+                                content: `${(ref13 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref13 === void 0 ? void 0 : (ref14 = ref13.badgeGraphicData) === null || ref14 === void 0 ? void 0 : ref14.logo}`
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "twitter:card",
@@ -116,24 +120,24 @@ const PublicProfile = ({ props  })=>{
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "twitter:url",
-                                content: `${"https://testpage-tau.vercel.app"}/?id=${props === null || props === void 0 ? void 0 : props.id}`
+                                content: `${"http://66.175.217.67:3000"}/?id=${props === null || props === void 0 ? void 0 : props.id}`
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "twitter:title",
-                                content: "ITIL\xae 4 Foundation: The Guiding Principles • Ajit • DocView\xae Digital Badge: ITIL\xae 4 Foundation: The Guiding Principles"
+                                content: `Congratulations! Here is your certified badge for ${(ref15 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref15 === void 0 ? void 0 : ref15.badgeData.criteria}.`
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "twitter:description",
-                                content: (ref6 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref6 === void 0 ? void 0 : (ref7 = ref6.badgeData) === null || ref7 === void 0 ? void 0 : ref7.description
+                                content: `Hi ${(ref16 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref16 === void 0 ? void 0 : ref16.recipientData.name}, We congrats you on receiving the badge for ${(ref17 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref17 === void 0 ? void 0 : ref17.badgeData.skill} issued by ${(ref18 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref18 === void 0 ? void 0 : (ref19 = ref18.issuerData) === null || ref19 === void 0 ? void 0 : ref19.name} and  valid till ${external_moment_default()((ref20 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref20 === void 0 ? void 0 : ref20.validTo).format('DD/MM/YYYY')}.`
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "twitter:image",
-                                content: `${(ref8 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref8 === void 0 ? void 0 : (ref9 = ref8.badgeGraphicData) === null || ref9 === void 0 ? void 0 : ref9.logo}`
+                                content: `${(ref21 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref21 === void 0 ? void 0 : (ref22 = ref21.badgeGraphicData) === null || ref22 === void 0 ? void 0 : ref22.logo}`
                             })
                         ]
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                        src: (ref10 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref10 === void 0 ? void 0 : (ref11 = ref10.badgeGraphicData) === null || ref11 === void 0 ? void 0 : ref11.logo,
+                        src: (ref23 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref23 === void 0 ? void 0 : (ref24 = ref23.badgeGraphicData) === null || ref24 === void 0 ? void 0 : ref24.logo,
                         alt: "badge",
                         style: {
                             display: 'table-cell',
@@ -152,7 +156,7 @@ const PublicProfile = ({ props  })=>{
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                         className: "data-style",
-                                        children: (ref12 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref12 === void 0 ? void 0 : ref12.recipientData.name
+                                        children: (ref25 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref25 === void 0 ? void 0 : ref25.recipientData.name
                                     })
                                 ]
                             }),
@@ -165,7 +169,7 @@ const PublicProfile = ({ props  })=>{
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                         className: "data-style",
-                                        children: external_moment_default()((ref13 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref13 === void 0 ? void 0 : ref13.issueAt).format('DD/MM/YYYY')
+                                        children: external_moment_default()((ref26 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref26 === void 0 ? void 0 : ref26.issueAt).format('DD/MM/YYYY')
                                     })
                                 ]
                             }),
@@ -178,7 +182,7 @@ const PublicProfile = ({ props  })=>{
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                         className: "data-style",
-                                        children: (ref14 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref14 === void 0 ? void 0 : (ref15 = ref14.issuerData) === null || ref15 === void 0 ? void 0 : ref15.name
+                                        children: (ref27 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref27 === void 0 ? void 0 : (ref28 = ref27.issuerData) === null || ref28 === void 0 ? void 0 : ref28.name
                                     })
                                 ]
                             }),
@@ -191,7 +195,7 @@ const PublicProfile = ({ props  })=>{
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                         className: "data-style",
-                                        children: (ref16 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref16 === void 0 ? void 0 : ref16.badgeData.criteria
+                                        children: (ref29 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref29 === void 0 ? void 0 : ref29.badgeData.criteria
                                     })
                                 ]
                             }),
@@ -204,7 +208,7 @@ const PublicProfile = ({ props  })=>{
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                         className: "data-style",
-                                        children: (ref17 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref17 === void 0 ? void 0 : ref17.badgeData.skill
+                                        children: (ref30 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref30 === void 0 ? void 0 : ref30.badgeData.skill
                                     })
                                 ]
                             }),
@@ -217,7 +221,7 @@ const PublicProfile = ({ props  })=>{
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                         className: "data-style",
-                                        children: external_moment_default()((ref18 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref18 === void 0 ? void 0 : ref18.validTo).format('DD/MM/YYYY')
+                                        children: external_moment_default()((ref31 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref31 === void 0 ? void 0 : ref31.validTo).format('DD/MM/YYYY')
                                     })
                                 ]
                             }),
@@ -227,7 +231,7 @@ const PublicProfile = ({ props  })=>{
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: "desc-data",
-                                children: (ref19 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref19 === void 0 ? void 0 : (ref20 = ref19.badgeData) === null || ref20 === void 0 ? void 0 : ref20.description
+                                children: (ref32 = props === null || props === void 0 ? void 0 : props.data[0]) === null || ref32 === void 0 ? void 0 : (ref33 = ref32.badgeData) === null || ref33 === void 0 ? void 0 : ref33.description
                             })
                         ]
                     })

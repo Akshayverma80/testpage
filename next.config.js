@@ -1,6 +1,6 @@
 
 module.exports = {
     env:{
-        live:"https://testpage-tau.vercel.app"
+        live:"http://66.175.217.67:3000"
     }
 }
