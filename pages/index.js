@@ -1,18 +1,9 @@
-import Head from 'next/head'
-import React,{useEffect,useState} from "react";
+import React from "react";
 import PublicProfile from "../Container/PublicProfile";
 
 const Index = (props) => {
   // console.log("props",props)
-  return (
-        <div>
-            <Head> 
-            <title>ITIL® 4 Foundation: The Guiding Principles • Ajit • DocView® Digital Badge: ITIL® 4 Foundation: The Guiding
-    Principles</title>
-    </Head>
-            <PublicProfile props={props} />
-        </div>
-    )
+  return <PublicProfile props={props} />
 }
 
 export async function getServerSideProps(context) {

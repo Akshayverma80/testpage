@@ -13,13 +13,7 @@ class MyDocument extends Document {
         <meta charSet="utf-8" />
         <link rel="icon" href="/badge.png" />
         <meta name="theme-color" content="#000000" />
-        {/* <!-- added by me --> */}
-        {/* <!-- Primary Meta Tags --> */}
-    <meta name="title"
-    content="ITIL® 4 Foundation: The Guiding Principles • Ajit • DocView® Digital Badge: ITIL® 4 Foundation: The Guiding Principles"/>
-  <meta name="description" content="Web site created using create-react-app"/>
-
-  
+    
         <link rel="apple-touch-icon" href="/badge.png" />
         {/* <link rel="manifest" href="/manifest.json" /> */}
         {/* <!-- Bootstrap CSS --> */}

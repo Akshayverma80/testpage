@@ -40,14 +40,6 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1__["default"] {
                             name: "theme-color",
                             content: "#000000"
                         }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                            name: "title",
-                            content: "ITIL\xae 4 Foundation: The Guiding Principles • Ajit • DocView\xae Digital Badge: ITIL\xae 4 Foundation: The Guiding Principles"
-                        }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
-                            name: "description",
-                            content: "Web site created using create-react-app"
-                        }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
                             rel: "apple-touch-icon",
                             href: "/badge.png"

@@ -19,14 +19,14 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: external "react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(997);
-;// CONCATENATED MODULE: external "next/head"
-const head_namespaceObject = require("next/head");
-var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(689);
 ;// CONCATENATED MODULE: external "moment"
 const external_moment_namespaceObject = require("moment");
 var external_moment_default = /*#__PURE__*/__webpack_require__.n(external_moment_namespaceObject);
+;// CONCATENATED MODULE: external "next/head"
+const head_namespaceObject = require("next/head");
+var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
 ;// CONCATENATED MODULE: ./Container/PublicProfile/index.js
 
 
@@ -100,7 +100,7 @@ const PublicProfile = ({ props  })=>{
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "og:url",
-                                content: `${"http://66.175.217.67:3000"}/?id=${props === null || props === void 0 ? void 0 : props.id}`
+                                content: `${"https://testpage-tau.vercel.app"}/?id=${props === null || props === void 0 ? void 0 : props.id}`
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "og:title",
@@ -120,7 +120,7 @@ const PublicProfile = ({ props  })=>{
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "twitter:url",
-                                content: `${"http://66.175.217.67:3000"}/?id=${props === null || props === void 0 ? void 0 : props.id}`
+                                content: `${"https://testpage-tau.vercel.app"}/?id=${props === null || props === void 0 ? void 0 : props.id}`
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "twitter:title",
@@ -256,20 +256,10 @@ const PublicProfile = ({ props  })=>{
 
 
 
-
 const Index = (props)=>{
     // console.log("props",props)
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx((head_default()), {
-                children: /*#__PURE__*/ jsx_runtime_.jsx("title", {
-                    children: "ITIL\xae 4 Foundation: The Guiding Principles • Ajit • DocView\xae Digital Badge: ITIL\xae 4 Foundation: The Guiding Principles"
-                })
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx(Container_PublicProfile, {
-                props: props
-            })
-        ]
+    return(/*#__PURE__*/ jsx_runtime_.jsx(Container_PublicProfile, {
+        props: props
     }));
 };
 async function getServerSideProps(context) {
