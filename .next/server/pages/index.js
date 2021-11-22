@@ -96,7 +96,7 @@ const PublicProfile = ({ props  })=>{
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "og:url",
-                                content: `${"http://66.175.217.67:3000"}/?id=${props === null || props === void 0 ? void 0 : props.id}`
+                                content: `${"https://testpage-tau.vercel.app"}/?id=${props === null || props === void 0 ? void 0 : props.id}`
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "og:title",
@@ -116,7 +116,7 @@ const PublicProfile = ({ props  })=>{
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "twitter:url",
-                                content: `${"http://66.175.217.67:3000"}/?id=${props === null || props === void 0 ? void 0 : props.id}`
+                                content: `${"https://testpage-tau.vercel.app"}/?id=${props === null || props === void 0 ? void 0 : props.id}`
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                                 property: "twitter:title",
