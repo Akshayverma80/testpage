@@ -1,0 +1,58 @@
+.payment-management-page {
+  .left-right {
+    margin-bottom: 30px;
+    .heading-1 {
+      margin-bottom: 0px;
+    }
+    .total-amt {
+      color: #ffffff;
+      span {
+        margin-right: 10px;
+      }
+    }
+  }
+  .payment-filters {
+    margin-bottom: 30px;
+    button {
+      height: 45px;
+      max-width: 150px;
+    }
+  }
+  .payment-table {
+      tr {
+        td {
+          &:last-child {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+  }
+}
+
+.live-stream-tab {
+  // color: #ffffff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #292c39;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  span {
+    cursor: pointer;
+    user-select: none;
+    &.active-tab {
+      border: 1px solid #e38e2b;
+      padding: 12px;
+      background: -webkit-linear-gradient(#b7873b, #dbba59);
+      color: #ffffff;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @media (max-width: 425.98px) {
+    font-size: 13px;
+  }
+}
